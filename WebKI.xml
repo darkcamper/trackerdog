@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AcceptChanges method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_AcceptChanges.htm" />
+  <HelpKINode Title="AddedItems property" Url="html/P_TrackerDog_IReadOnlyChangeTrackableCollection_AddedItems.htm" />
+  <HelpKINode Title="AddImplementation method" Url="html/M_TrackerDog_Configuration_TrackableCollectionConfiguration_AddImplementation.htm" />
+  <HelpKINode Title="AsTrackable(Of TObject) method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_AsTrackable__1.htm" />
+  <HelpKINode Title="AsTrackable&lt;TObject&gt; method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_AsTrackable__1.htm" />
+  <HelpKINode Title="ChangedProperties property" Url="html/P_TrackerDog_IObjectChangeTracker_ChangedProperties.htm" />
+  <HelpKINode Title="CollectionConfiguration property" Url="html/P_TrackerDog_Configuration_TrackerDogConfiguration_CollectionConfiguration.htm" />
+  <HelpKINode Title="Complete method" Url="html/M_TrackerDog_Patterns_IObjectChangeUnitOfWork_Complete.htm" />
+  <HelpKINode Title="CurrentPropertyValue(Of T, TReturn) method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_CurrentPropertyValue__2.htm" />
+  <HelpKINode Title="CurrentPropertyValue&lt;T, TReturn&gt; method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_CurrentPropertyValue__2.htm" />
+  <HelpKINode Title="CurrentValue property" Url="html/P_TrackerDog_IObjectPropertyChangeTracking_CurrentValue.htm" />
+  <HelpKINode Title="Discard method" Url="html/M_TrackerDog_Patterns_IObjectChangeUnitOfWork_Discard.htm" />
+  <HelpKINode Title="GetChangeTracker method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_GetChangeTracker.htm" />
+  <HelpKINode Title="GetImplementation method" Url="html/M_TrackerDog_Configuration_TrackableCollectionConfiguration_GetImplementation.htm" />
+  <HelpKINode Title="GetPropertyTracking(Of TObject, TReturn) method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_GetPropertyTracking__2.htm" />
+  <HelpKINode Title="GetPropertyTracking&lt;TObject, TReturn&gt; method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_GetPropertyTracking__2.htm" />
+  <HelpKINode Title="GetTrackingByProperty(Of T, TProperty) method" Url="html/M_TrackerDog_IObjectChangeTracker_GetTrackingByProperty__2.htm" />
+  <HelpKINode Title="GetTrackingByProperty&lt;T, TProperty&gt; method" Url="html/M_TrackerDog_IObjectChangeTracker_GetTrackingByProperty__2.htm" />
+  <HelpKINode Title="HasChanged property" Url="html/P_TrackerDog_IObjectPropertyChangeTracking_HasChanged.htm" />
+  <HelpKINode Title="IObjectChangeTracker interface">
+    <HelpKINode Title="IObjectChangeTracker Interface" Url="html/T_TrackerDog_IObjectChangeTracker.htm" />
+    <HelpKINode Title="about IObjectChangeTracker interface" Url="html/T_TrackerDog_IObjectChangeTracker.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TrackerDog_IObjectChangeTracker.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TrackerDog_IObjectChangeTracker.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IObjectChangeTracker.ChangedProperties property" Url="html/P_TrackerDog_IObjectChangeTracker_ChangedProperties.htm" />
+  <HelpKINode Title="IObjectChangeTracker.GetTrackingByProperty(Of T, TProperty) method" Url="html/M_TrackerDog_IObjectChangeTracker_GetTrackingByProperty__2.htm" />
+  <HelpKINode Title="IObjectChangeTracker.GetTrackingByProperty&lt;T, TProperty&gt; method" Url="html/M_TrackerDog_IObjectChangeTracker_GetTrackingByProperty__2.htm" />
+  <HelpKINode Title="IObjectChangeTracker.UnchangedProperties property" Url="html/P_TrackerDog_IObjectChangeTracker_UnchangedProperties.htm" />
+  <HelpKINode Title="IObjectChangeUnitOfWork interface">
+    <HelpKINode Title="IObjectChangeUnitOfWork Interface" Url="html/T_TrackerDog_Patterns_IObjectChangeUnitOfWork.htm" />
+    <HelpKINode Title="about IObjectChangeUnitOfWork interface" Url="html/T_TrackerDog_Patterns_IObjectChangeUnitOfWork.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TrackerDog_Patterns_IObjectChangeUnitOfWork.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IObjectChangeUnitOfWork.Complete method" Url="html/M_TrackerDog_Patterns_IObjectChangeUnitOfWork_Complete.htm" />
+  <HelpKINode Title="IObjectChangeUnitOfWork.Discard method" Url="html/M_TrackerDog_Patterns_IObjectChangeUnitOfWork_Discard.htm" />
+  <HelpKINode Title="IObjectPropertyChangeTracking interface">
+    <HelpKINode Title="IObjectPropertyChangeTracking Interface" Url="html/T_TrackerDog_IObjectPropertyChangeTracking.htm" />
+    <HelpKINode Title="about IObjectPropertyChangeTracking interface" Url="html/T_TrackerDog_IObjectPropertyChangeTracking.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TrackerDog_IObjectPropertyChangeTracking.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TrackerDog_IObjectPropertyChangeTracking.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IObjectPropertyChangeTracking.CurrentValue property" Url="html/P_TrackerDog_IObjectPropertyChangeTracking_CurrentValue.htm" />
+  <HelpKINode Title="IObjectPropertyChangeTracking.HasChanged property" Url="html/P_TrackerDog_IObjectPropertyChangeTracking_HasChanged.htm" />
+  <HelpKINode Title="IObjectPropertyChangeTracking.OldValue property" Url="html/P_TrackerDog_IObjectPropertyChangeTracking_OldValue.htm" />
+  <HelpKINode Title="IObjectPropertyChangeTracking.Property property" Url="html/P_TrackerDog_IObjectPropertyChangeTracking_Property.htm" />
+  <HelpKINode Title="IObjectPropertyChangeTracking.Tracker property" Url="html/P_TrackerDog_IObjectPropertyChangeTracking_Tracker.htm" />
+  <HelpKINode Title="IReadOnlyChangeTrackableCollection interface">
+    <HelpKINode Title="IReadOnlyChangeTrackableCollection Interface" Url="html/T_TrackerDog_IReadOnlyChangeTrackableCollection.htm" />
+    <HelpKINode Title="about IReadOnlyChangeTrackableCollection interface" Url="html/T_TrackerDog_IReadOnlyChangeTrackableCollection.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TrackerDog_IReadOnlyChangeTrackableCollection.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IReadOnlyChangeTrackableCollection.AddedItems property" Url="html/P_TrackerDog_IReadOnlyChangeTrackableCollection_AddedItems.htm" />
+  <HelpKINode Title="IReadOnlyChangeTrackableCollection.RemovedItems property" Url="html/P_TrackerDog_IReadOnlyChangeTrackableCollection_RemovedItems.htm" />
+  <HelpKINode Title="IsTrackable method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_IsTrackable.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions class">
+    <HelpKINode Title="ObjectChangeTrackingExtensions Class" Url="html/T_TrackerDog_ObjectChangeTrackingExtensions.htm" />
+    <HelpKINode Title="about ObjectChangeTrackingExtensions class" Url="html/T_TrackerDog_ObjectChangeTrackingExtensions.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TrackerDog_ObjectChangeTrackingExtensions.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ObjectChangeTrackingExtensions.AcceptChanges method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_AcceptChanges.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions.AsTrackable(Of TObject) method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_AsTrackable__1.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions.AsTrackable&lt;TObject&gt; method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_AsTrackable__1.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions.CurrentPropertyValue(Of T, TReturn) method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_CurrentPropertyValue__2.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions.CurrentPropertyValue&lt;T, TReturn&gt; method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_CurrentPropertyValue__2.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions.GetChangeTracker method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_GetChangeTracker.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions.GetPropertyTracking(Of TObject, TReturn) method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_GetPropertyTracking__2.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions.GetPropertyTracking&lt;TObject, TReturn&gt; method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_GetPropertyTracking__2.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions.IsTrackable method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_IsTrackable.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions.OldPropertyValue(Of T, TReturn) method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_OldPropertyValue__2.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions.OldPropertyValue&lt;T, TReturn&gt; method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_OldPropertyValue__2.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions.PropertyHasChanged(Of T) method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_PropertyHasChanged__1.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions.PropertyHasChanged&lt;T&gt; method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_PropertyHasChanged__1.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions.UndoChanges method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_UndoChanges.htm" />
+  <HelpKINode Title="OldPropertyValue(Of T, TReturn) method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_OldPropertyValue__2.htm" />
+  <HelpKINode Title="OldPropertyValue&lt;T, TReturn&gt; method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_OldPropertyValue__2.htm" />
+  <HelpKINode Title="OldValue property" Url="html/P_TrackerDog_IObjectPropertyChangeTracking_OldValue.htm" />
+  <HelpKINode Title="Property property" Url="html/P_TrackerDog_IObjectPropertyChangeTracking_Property.htm" />
+  <HelpKINode Title="PropertyHasChanged(Of T) method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_PropertyHasChanged__1.htm" />
+  <HelpKINode Title="PropertyHasChanged&lt;T&gt; method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_PropertyHasChanged__1.htm" />
+  <HelpKINode Title="RemovedItems property" Url="html/P_TrackerDog_IReadOnlyChangeTrackableCollection_RemovedItems.htm" />
+  <HelpKINode Title="ReplaceImplementation method" Url="html/M_TrackerDog_Configuration_TrackableCollectionConfiguration_ReplaceImplementation.htm" />
+  <HelpKINode Title="TrackableCollectionConfiguration class">
+    <HelpKINode Title="TrackableCollectionConfiguration Class" Url="html/T_TrackerDog_Configuration_TrackableCollectionConfiguration.htm" />
+    <HelpKINode Title="about TrackableCollectionConfiguration class" Url="html/T_TrackerDog_Configuration_TrackableCollectionConfiguration.htm" />
+    <HelpKINode Title="constructor" Url="html/M_TrackerDog_Configuration_TrackableCollectionConfiguration__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TrackerDog_Configuration_TrackableCollectionConfiguration.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TrackableCollectionConfiguration.AddImplementation method" Url="html/M_TrackerDog_Configuration_TrackableCollectionConfiguration_AddImplementation.htm" />
+  <HelpKINode Title="TrackableCollectionConfiguration.GetImplementation method" Url="html/M_TrackerDog_Configuration_TrackableCollectionConfiguration_GetImplementation.htm" />
+  <HelpKINode Title="TrackableCollectionConfiguration.ReplaceImplementation method" Url="html/M_TrackerDog_Configuration_TrackableCollectionConfiguration_ReplaceImplementation.htm" />
+  <HelpKINode Title="TrackableCollectionConfiguration.TrackableCollectionConfiguration constructor" Url="html/M_TrackerDog_Configuration_TrackableCollectionConfiguration__ctor.htm" />
+  <HelpKINode Title="Tracker property" Url="html/P_TrackerDog_IObjectPropertyChangeTracking_Tracker.htm" />
+  <HelpKINode Title="TrackerDog namespace" Url="html/N_TrackerDog.htm" />
+  <HelpKINode Title="TrackerDog.Configuration namespace" Url="html/N_TrackerDog_Configuration.htm" />
+  <HelpKINode Title="TrackerDog.Configuration.TrackableCollectionConfiguration class" Url="html/T_TrackerDog_Configuration_TrackableCollectionConfiguration.htm" />
+  <HelpKINode Title="TrackerDog.Configuration.TrackerDogConfiguration class" Url="html/T_TrackerDog_Configuration_TrackerDogConfiguration.htm" />
+  <HelpKINode Title="TrackerDog.IObjectChangeTracker interface" Url="html/T_TrackerDog_IObjectChangeTracker.htm" />
+  <HelpKINode Title="TrackerDog.IObjectPropertyChangeTracking interface" Url="html/T_TrackerDog_IObjectPropertyChangeTracking.htm" />
+  <HelpKINode Title="TrackerDog.IReadOnlyChangeTrackableCollection interface" Url="html/T_TrackerDog_IReadOnlyChangeTrackableCollection.htm" />
+  <HelpKINode Title="TrackerDog.ObjectChangeTrackingExtensions class" Url="html/T_TrackerDog_ObjectChangeTrackingExtensions.htm" />
+  <HelpKINode Title="TrackerDog.Patterns namespace" Url="html/N_TrackerDog_Patterns.htm" />
+  <HelpKINode Title="TrackerDog.Patterns.IObjectChangeUnitOfWork interface" Url="html/T_TrackerDog_Patterns_IObjectChangeUnitOfWork.htm" />
+  <HelpKINode Title="TrackerDogConfiguration class">
+    <HelpKINode Title="TrackerDogConfiguration Class" Url="html/T_TrackerDog_Configuration_TrackerDogConfiguration.htm" />
+    <HelpKINode Title="about TrackerDogConfiguration class" Url="html/T_TrackerDog_Configuration_TrackerDogConfiguration.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_TrackerDog_Configuration_TrackerDogConfiguration.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_TrackerDog_Configuration_TrackerDogConfiguration.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TrackerDogConfiguration.CollectionConfiguration property" Url="html/P_TrackerDog_Configuration_TrackerDogConfiguration_CollectionConfiguration.htm" />
+  <HelpKINode Title="TrackerDogConfiguration.TrackTheseTypes method" Url="html/M_TrackerDog_Configuration_TrackerDogConfiguration_TrackTheseTypes.htm" />
+  <HelpKINode Title="TrackTheseTypes method" Url="html/M_TrackerDog_Configuration_TrackerDogConfiguration_TrackTheseTypes.htm" />
+  <HelpKINode Title="UnchangedProperties property" Url="html/P_TrackerDog_IObjectChangeTracker_UnchangedProperties.htm" />
+  <HelpKINode Title="UndoChanges method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_UndoChanges.htm" />
+  <HelpKINode Title="version">
+    <HelpKINode Title="1.0.0.0" Url="html/faea32e1-2034-42dd-9e1a-3a8b082602dc.htm" />
+    <HelpKINode Title="history" Url="html/172bcf6b-d432-4f32-a218-c71651691c21.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Welcome" Url="html/0e46d6ac-6f64-4d54-98fd-3813df42cb8e.htm" />
+</HelpKI>

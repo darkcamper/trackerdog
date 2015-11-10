@@ -1,0 +1,525 @@
+﻿<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../styles/branding.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" />
+    <script type="text/javascript" src="../scripts/branding.js"> </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>How-to: Working with TrackerDog</title>
+    <meta name="Language" content="en-us" />
+    <meta name="Microsoft.Help.Id" content="52e40f26-3dfe-47e0-adf1-09233e98f42e" />
+    <meta name="Description" content="This is a quick tutorial to learn how to use TrackerDog" />
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <meta name="BrandingAware" content="true" />
+    
+    
+    <link type="text/css" rel="stylesheet" href="../styles/highlight.css" />
+    <script type="text/javascript" src="../scripts/highlight.js"> </script>
+    <link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" />
+    <script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../scripts/branding-Website.js"></script>
+  </head>
+  <body onload="OnLoad('cs')">
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <div class="pageHeader" id="PageHeader">TrackerDog<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div>
+    <div class="pageBody">
+      <div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="0e46d6ac-6f64-4d54-98fd-3813df42cb8e.htm" title="TrackerDog" tocid="roottoc">TrackerDog</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="0e46d6ac-6f64-4d54-98fd-3813df42cb8e.htm" title="Welcome to TrackerDog!" tocid="0e46d6ac-6f64-4d54-98fd-3813df42cb8e">Welcome to TrackerDog!</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="95cc6530-e365-4045-951e-4ab992610c1f.htm" title="How does it work?" tocid="95cc6530-e365-4045-951e-4ab992610c1f">How does it work?</a></div><div class="toclevel1 current" data-toclevel="1"><a data-tochassubtree="false" href="52e40f26-3dfe-47e0-adf1-09233e98f42e.htm" title="How-to: Working with TrackerDog" tocid="52e40f26-3dfe-47e0-adf1-09233e98f42e">How-to: Working with TrackerDog</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="1e03762d-b9f5-44af-a4b0-c23c36064c24.htm" title="Collection change tracking" tocid="1e03762d-b9f5-44af-a4b0-c23c36064c24">Collection change tracking</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="172bcf6b-d432-4f32-a218-c71651691c21.htm" title="Version History" tocid="172bcf6b-d432-4f32-a218-c71651691c21">Version History</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="N_TrackerDog.htm" title="TrackerDog" tocid="N_TrackerDog">TrackerDog</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="N_TrackerDog_Configuration.htm" title="TrackerDog.Configuration" tocid="N_TrackerDog_Configuration">TrackerDog.Configuration</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="N_TrackerDog_Patterns.htm" title="TrackerDog.Patterns" tocid="N_TrackerDog_Patterns">TrackerDog.Patterns</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent">
+        <table class="titleTable">
+          <tr>
+            <td class="logoColumn">
+              <img src="../icons/Help.png" />
+            </td>
+            <td class="titleColumn">How-to: Working with TrackerDog</td>
+          </tr>
+        </table>
+        <span class="introStyle"></span>
+        <div class="introduction">
+          <p>
+        This is a quick tutorial to learn how to use TrackerDog</p>
+        </div>
+        <div class="collapsibleAreaRegion">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0">
+            <img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How to turn objects into change-trackable ones</span>
+        </div>
+        <div id="ID1RBSection" class="collapsibleSection">
+          <p>
+          First of all, you need to design a regular class. <strong>
+            Note that the class must not be sealed and
+            its properties must be <span class="term">virtual</span> to let the proxy generator override them to intercept both
+            sets and gets:
+          </strong></p>
+          <div class="codeSnippetContainer">
+            <div class="codeSnippetContainerTabs">
+              <div id="ID0EAGAJAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+            </div>
+            <div class="codeSnippetContainerCodeContainer">
+              <div class="codeSnippetToolBar">
+                <div class="codeSnippetToolBarText">
+                  <a id="ID0EAGAJAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAGAJAAA');return false;" title="Copy">Copy</a>
+                </div>
+              </div>
+              <div id="ID0EAGAJAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">
+                  <span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> User
+{
+  <span class="highlight-keyword">public</span> <span class="highlight-keyword">virtual</span> <span class="highlight-keyword">string</span> Name { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">set</span>; }
+  <span class="highlight-keyword">public</span> <span class="highlight-keyword">virtual</span> <span class="highlight-keyword">byte</span> Age { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">set</span>; }
+}</pre>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">AddLanguageTabSet("ID0EAGAJAAA");</script>
+          <p>
+          Before being able to turn an object into a change-trackable one, you will need to tell TrackerDog that
+          your class (i.e. <span class="phrase">the type</span>) can be trackable:
+        </p>
+          <div class="codeSnippetContainer">
+            <div class="codeSnippetContainerTabs">
+              <div id="ID0EAEAJAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+            </div>
+            <div class="codeSnippetContainerCodeContainer">
+              <div class="codeSnippetToolBar">
+                <div class="codeSnippetToolBarText">
+                  <a id="ID0EAEAJAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAEAJAAA');return false;" title="Copy">Copy</a>
+                </div>
+              </div>
+              <div id="ID0EAEAJAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">TrackerDogConfiguration.TrackTheseTypes(<span class="highlight-keyword">typeof</span>(User));</pre>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">AddLanguageTabSet("ID0EAEAJAAA");</script>
+          <p>
+          Now, to track an instance of <span class="code">User</span> you need to
+          use <a href="M_TrackerDog_ObjectChangeTrackingExtensions_AsTrackable__1.htm">AsTrackable<span id="LSTAF17CDF3_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_0?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>TObject<span id="LSTAF17CDF3_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_1?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>(TObject)</a> extension method:
+        </p>
+          <div class="codeSnippetContainer">
+            <div class="codeSnippetContainerTabs">
+              <div id="ID0EACAJAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+            </div>
+            <div class="codeSnippetContainerCodeContainer">
+              <div class="codeSnippetToolBar">
+                <div class="codeSnippetToolBarText">
+                  <a id="ID0EACAJAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EACAJAAA');return false;" title="Copy">Copy</a>
+                </div>
+              </div>
+              <div id="ID0EACAJAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">User user = <span class="highlight-keyword">new</span> User().AsTrackable();
+
+<span class="highlight-comment">// or...</span>
+User user = <span class="highlight-keyword">new</span> User();
+user = user.AsTrackable();</pre>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">AddLanguageTabSet("ID0EACAJAAA");</script>
+          <p>Now you can produce changes to the trackable object:</p>
+          <div class="codeSnippetContainer">
+            <div class="codeSnippetContainerTabs">
+              <div id="ID0EAAAJAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+            </div>
+            <div class="codeSnippetContainerCodeContainer">
+              <div class="codeSnippetToolBar">
+                <div class="codeSnippetToolBarText">
+                  <a id="ID0EAAAJAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAAAJAAA');return false;" title="Copy">Copy</a>
+                </div>
+              </div>
+              <div id="ID0EAAAJAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">user.Name = <span class="highlight-literal">"Matías"</span>;
+user.Age = <span class="highlight-number">30</span>;</pre>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">AddLanguageTabSet("ID0EAAAJAAA");</script>
+        </div>
+        <div class="collapsibleAreaRegion">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0">
+            <img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Checking which properties have been changed</span>
+        </div>
+        <div id="ID2RBSection" class="collapsibleSection">
+          <p>
+          Call <a href="M_TrackerDog_ObjectChangeTrackingExtensions_GetChangeTracker.htm">GetChangeTracker(Object)</a> extension method:
+        </p>
+          <div class="codeSnippetContainer">
+            <div class="codeSnippetContainerTabs">
+              <div id="ID0EAAAIAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+            </div>
+            <div class="codeSnippetContainerCodeContainer">
+              <div class="codeSnippetToolBar">
+                <div class="codeSnippetToolBarText">
+                  <a id="ID0EAAAIAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAAAIAAA');return false;" title="Copy">Copy</a>
+                </div>
+              </div>
+              <div id="ID0EAAAIAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">IObjectChangeTracker changeTracker = user.GetChangeTracker();
+
+IImmutableSet&lt;IObjectPropertyChangeTracking&gt; changedProperties = changeTracker.ChangedProperties;
+
+<span class="highlight-comment">// Also you can get unchanged properties</span>
+IImmutableSet&lt;IObjectPropertyChangeTracking&gt; unchangedProperties = changeTracker.UnchangedProperties;</pre>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">AddLanguageTabSet("ID0EAAAIAAA");</script>
+        </div>
+        <div class="collapsibleAreaRegion">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0">
+            <img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Getting the value of some property before it was changed</span>
+        </div>
+        <div id="ID3RBSection" class="collapsibleSection">
+          <p>
+          Call <a href="M_TrackerDog_ObjectChangeTrackingExtensions_OldPropertyValue__2.htm">OldPropertyValue<span id="LSTAF17CDF3_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_2?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>T, TReturn<span id="LSTAF17CDF3_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_3?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>(T, Expression<span id="LSTAF17CDF3_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_4?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>Func<span id="LSTAF17CDF3_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_5?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>T, TReturn<span id="LSTAF17CDF3_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_6?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script><span id="LSTAF17CDF3_7"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_7?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> extension method:
+        </p>
+          <div class="codeSnippetContainer">
+            <div class="codeSnippetContainerTabs">
+              <div id="ID0EAAAHAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+            </div>
+            <div class="codeSnippetContainerCodeContainer">
+              <div class="codeSnippetToolBar">
+                <div class="codeSnippetToolBarText">
+                  <a id="ID0EAAAHAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAAAHAAA');return false;" title="Copy">Copy</a>
+                </div>
+              </div>
+              <div id="ID0EAAAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">
+                  <span class="highlight-keyword">string</span> oldUserName = user.OldPropertyValue(u =&gt; u.Name);
+
+<span class="highlight-comment">// You can also get a property tracking object</span>
+IObjectChangeTracking userNameChangeTracking = user.GetPropertyTracking(u =&gt; u.Name);
+
+oldUserName = userNameChangeTracking.OldValue;</pre>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">AddLanguageTabSet("ID0EAAAHAAA");</script>
+        </div>
+        <div class="collapsibleAreaRegion">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0">
+            <img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Getting current property value</span>
+        </div>
+        <div id="ID4RBSection" class="collapsibleSection">
+          <p>
+          Call <a href="M_TrackerDog_ObjectChangeTrackingExtensions_CurrentPropertyValue__2.htm">CurrentPropertyValue<span id="LSTAF17CDF3_8"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_8?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>T, TReturn<span id="LSTAF17CDF3_9"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_9?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>(T, Expression<span id="LSTAF17CDF3_10"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_10?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>Func<span id="LSTAF17CDF3_11"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_11?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>T, TReturn<span id="LSTAF17CDF3_12"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_12?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script><span id="LSTAF17CDF3_13"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_13?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> extension method:
+        </p>
+          <div class="codeSnippetContainer">
+            <div class="codeSnippetContainerTabs">
+              <div id="ID0EAAAGAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+            </div>
+            <div class="codeSnippetContainerCodeContainer">
+              <div class="codeSnippetToolBar">
+                <div class="codeSnippetToolBarText">
+                  <a id="ID0EAAAGAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAAAGAAA');return false;" title="Copy">Copy</a>
+                </div>
+              </div>
+              <div id="ID0EAAAGAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">
+                  <span class="highlight-keyword">string</span> currentUserName = user.CurrentPropertyValue(u =&gt; u.Name);
+
+<span class="highlight-comment">// Ok, you would also be able to achieve the same result doing so:</span>
+currentUserName = user.Name;
+
+<span class="highlight-comment">// But having this method lets you build an expression tree to select some tracked property "current value"...</span>
+
+<span class="highlight-comment">// You can also get a property tracking object</span>
+IObjectChangeTracking userNameChangeTracking = user.GetPropertyTracking(u =&gt; u.Name);
+
+currentUserName = userNameChangeTracking.CurrentValue;</pre>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">AddLanguageTabSet("ID0EAAAGAAA");</script>
+        </div>
+        <div class="collapsibleAreaRegion">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0">
+            <img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Checking if a property changed its value since it was started to be tracked</span>
+        </div>
+        <div id="ID5RBSection" class="collapsibleSection">
+          <p>
+          Call <a href="M_TrackerDog_ObjectChangeTrackingExtensions_PropertyHasChanged__1.htm">PropertyHasChanged<span id="LSTAF17CDF3_14"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_14?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>T<span id="LSTAF17CDF3_15"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_15?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>(T, Expression<span id="LSTAF17CDF3_16"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_16?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>Func<span id="LSTAF17CDF3_17"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_17?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>T, Object<span id="LSTAF17CDF3_18"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_18?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script><span id="LSTAF17CDF3_19"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF17CDF3_19?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> extension method:
+        </p>
+          <div class="codeSnippetContainer">
+            <div class="codeSnippetContainerTabs">
+              <div id="ID0EAAAFAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+            </div>
+            <div class="codeSnippetContainerCodeContainer">
+              <div class="codeSnippetToolBar">
+                <div class="codeSnippetToolBarText">
+                  <a id="ID0EAAAFAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAAAFAAA');return false;" title="Copy">Copy</a>
+                </div>
+              </div>
+              <div id="ID0EAAAFAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">
+                  <span class="highlight-keyword">if</span>(user.PropertyHasChanged(u =&gt; u.Name))
+{
+    <span class="highlight-comment">// It has changed!</span>
+}
+
+<span class="highlight-comment">// You can also get a property tracking object</span>
+IObjectChangeTracking userNameChangeTracking = user.GetPropertyTracking(u =&gt; u.Name);
+
+<span class="highlight-keyword">if</span>(userNameChangeTracking.HasChanged)
+{
+    <span class="highlight-comment">// It has changed!</span>
+}</pre>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">AddLanguageTabSet("ID0EAAAFAAA");</script>
+        </div>
+        <div class="collapsibleAreaRegion">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0">
+            <img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I accept or undo changes</span>
+        </div>
+        <div id="ID6RBSection" class="collapsibleSection">
+          <p>
+          Call
+          <a href="M_TrackerDog_ObjectChangeTrackingExtensions_AcceptChanges.htm">AcceptChanges(Object)</a> or
+          <a href="M_TrackerDog_ObjectChangeTrackingExtensions_UndoChanges.htm">UndoChanges(Object)</a> extension methods:
+        </p>
+          <div class="codeSnippetContainer">
+            <div class="codeSnippetContainerTabs">
+              <div id="ID0EAAAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+            </div>
+            <div class="codeSnippetContainerCodeContainer">
+              <div class="codeSnippetToolBar">
+                <div class="codeSnippetToolBarText">
+                  <a id="ID0EAAAEAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAAAEAAA');return false;" title="Copy">Copy</a>
+                </div>
+              </div>
+              <div id="ID0EAAAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">user.AcceptChanges();
+
+<span class="highlight-comment">// or...</span>
+user.UndoChanges();</pre>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">AddLanguageTabSet("ID0EAAAEAAA");</script>
+        </div>
+        <div class="collapsibleAreaRegion">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0">
+            <img id="ID7RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Tracking collection changes</span>
+        </div>
+        <div id="ID7RBSection" class="collapsibleSection">
+          <div class="codeSnippetContainer">
+            <div class="codeSnippetContainerTabs">
+              <div id="ID0EACADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+            </div>
+            <div class="codeSnippetContainerCodeContainer">
+              <div class="codeSnippetToolBar">
+                <div class="codeSnippetToolBarText">
+                  <a id="ID0EACADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EACADAAA');return false;" title="Copy">Copy</a>
+                </div>
+              </div>
+              <div id="ID0EACADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">
+                  <span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> App 
+{
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">virtual</span> List&lt;User&gt; Users { <span class="highlight-keyword">get</span>; } = <span class="highlight-keyword">new</span> List&lt;User&gt;();
+}
+
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> User 
+{
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">string</span> Name { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">set</span>; }
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">byte</span> Age { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">set</span>; }
+}
+
+App app = <span class="highlight-keyword">new</span> App().AsTrackable();
+app.Users.Add(<span class="highlight-keyword">new</span> User { Name = <span class="highlight-literal">"Matías"</span>, Age = <span class="highlight-number">30</span> });
+
+IReadOnlyChangeTrackableCollection trackableCollection =
+              (IReadOnlyChangeTrackableCollection)app.CurrentPropertyValue(app =&gt; app.Users);
+
+IImmutableSet&lt;<span class="highlight-keyword">object</span>&gt; addedItems = trackableCollection.AddedItems;
+IImmutableSet&lt;<span class="highlight-keyword">object</span>&gt; removedItems = trackableCollection.RemovedItems;
+
+<span class="highlight-comment">// If you need typed items...</span>
+IEnumerable&lt;User&gt; typedAddedUsers = addedItems.Cast&lt;User&gt;();
+IEnumerable&lt;User&gt; typedRemovedUsers = removedItems.Cast&lt;User&gt;();</pre>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">AddLanguageTabSet("ID0EACADAAA");</script>
+          <p>
+          Don't forget to add both <span class="code">App</span> and <span class="code">User</span> class as
+          trackable types:
+        </p>
+          <div class="codeSnippetContainer">
+            <div class="codeSnippetContainerTabs">
+              <div id="ID0EAAADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+            </div>
+            <div class="codeSnippetContainerCodeContainer">
+              <div class="codeSnippetToolBar">
+                <div class="codeSnippetToolBarText">
+                  <a id="ID0EAAADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAAADAAA');return false;" title="Copy">Copy</a>
+                </div>
+              </div>
+              <div id="ID0EAAADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">TrackerDogConfiguration.TrackTheseTypes(<span class="highlight-keyword">typeof</span>(App), <span class="highlight-keyword">typeof</span>(User));</pre>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">AddLanguageTabSet("ID0EAAADAAA");</script>
+        </div>
+        <div class="collapsibleAreaRegion">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID8RB')" onkeypress="SectionExpandCollapse_CheckKey('ID8RB', event)" tabindex="0">
+            <img id="ID8RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Object graph changes</span>
+        </div>
+        <div id="ID8RBSection" class="collapsibleSection">
+          <p>
+          When an aggregate root has many associations like 1-n, 1-1 or even M-N, TrackerDog
+          works the same way as a POCO with no associations with other objects:
+        </p>
+          <div class="codeSnippetContainer">
+            <div class="codeSnippetContainerTabs">
+              <div id="ID0EACACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+            </div>
+            <div class="codeSnippetContainerCodeContainer">
+              <div class="codeSnippetToolBar">
+                <div class="codeSnippetToolBarText">
+                  <a id="ID0EACACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EACACAAA');return false;" title="Copy">Copy</a>
+                </div>
+              </div>
+              <div id="ID0EACACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">
+                  <span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> A
+{
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">virtual</span> <span class="highlight-keyword">string</span> Text { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">set</span>; }
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">virtual</span> B B { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">set</span>; }
+}
+
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> B
+{
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">virtual</span> <span class="highlight-keyword">string</span> Text { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">set</span>; }
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">virtual</span> C C { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">set</span>; }
+}
+
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> C
+{
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">virtual</span> <span class="highlight-keyword">string</span> Text { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">set</span>; }
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">virtual</span> IList&lt;D&gt; ListOfD { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">set</span>; }
+}
+
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> D
+{
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">virtual</span> <span class="highlight-keyword">string</span> Text { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">set</span>; }
+}
+
+<span class="highlight-comment">// It will track the full object graph changes!</span>
+A a = <span class="highlight-keyword">new</span> A
+{
+  Text = initialValue,
+  B = <span class="highlight-keyword">new</span> B
+  {
+      Text = initialValue,
+      C = <span class="highlight-keyword">new</span> C
+      {
+          Text = initialValue,
+          ListOfD = <span class="highlight-keyword">new</span> List&lt;D&gt; { <span class="highlight-keyword">new</span> D { Text = <span class="highlight-literal">"initialValue"</span> } }
+      }
+  }
+}.AsTrackable();</pre>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">AddLanguageTabSet("ID0EACACAAA");</script>
+          <p>
+          Don't forget to add all types as trackable types:
+        </p>
+          <div class="codeSnippetContainer">
+            <div class="codeSnippetContainerTabs">
+              <div id="ID0EAAACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+            </div>
+            <div class="codeSnippetContainerCodeContainer">
+              <div class="codeSnippetToolBar">
+                <div class="codeSnippetToolBarText">
+                  <a id="ID0EAAACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAAACAAA');return false;" title="Copy">Copy</a>
+                </div>
+              </div>
+              <div id="ID0EAAACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">TrackerDogConfiguration.TrackTheseTypes
+(
+    <span class="highlight-keyword">typeof</span>(A), <span class="highlight-keyword">typeof</span>(B), <span class="highlight-keyword">typeof</span>(C), <span class="highlight-keyword">typeof</span>(D)
+);</pre>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">AddLanguageTabSet("ID0EAAACAAA");</script>
+        </div>
+        <div class="collapsibleAreaRegion">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID9RB')" onkeypress="SectionExpandCollapse_CheckKey('ID9RB', event)" tabindex="0">
+            <img id="ID9RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Observe property and collection changes</span>
+        </div>
+        <div id="ID9RBSection" class="collapsibleSection">
+          <p>
+          All change-tracked objects implement <a href="http://msdn2.microsoft.com/en-us/library/ms133020" target="_blank">INotifyPropertyChanged</a> and
+          change-tracked collection properties implement <a href="http://msdn2.microsoft.com/en-us/library/ms668629" target="_blank">INotifyCollectionChanged</a>.
+
+        </p>
+          <p>
+          Note that collection changes will also trigger a <a href="http://msdn2.microsoft.com/en-us/library/ms133023" target="_blank">PropertyChanged</a> event on the
+          object in the other side of the 1-n association.
+
+        </p>
+          <div class="codeSnippetContainer">
+            <div class="codeSnippetContainerTabs">
+              <div id="ID0EAAABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+            </div>
+            <div class="codeSnippetContainerCodeContainer">
+              <div class="codeSnippetToolBar">
+                <div class="codeSnippetToolBarText">
+                  <a id="ID0EAAABAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAAABAAA');return false;" title="Copy">Copy</a>
+                </div>
+              </div>
+              <div id="ID0EAAABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">
+                  <span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> App 
+{
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">virtual</span> <span class="highlight-keyword">string</span> Name { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">set</span>; }
+    <span class="highlight-keyword">public</span> List&lt;User&gt; Users { <span class="highlight-keyword">get</span>; } = <span class="highlight-keyword">new</span> List&lt;User&gt;();
+}
+
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> User 
+{
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">virtual</span> <span class="highlight-keyword">string</span> Name { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">set</span>; }
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">virtual</span> <span class="highlight-keyword">byte</span> Age { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">set</span>; }
+}
+
+App app = <span class="highlight-keyword">new</span> App().AsTrackable();
+
+((INotifyPropertyChanged)app).PropertyChanged += (sender, e) =&gt;
+{
+    <span class="highlight-keyword">string</span> propertyName = e.PropertyName;
+};
+
+((INotifyCollectionChanged)app.Users).CollectionChanged += (sender, e) =&gt;
+{
+    IEnumerable&lt;<span class="highlight-keyword">object</span>&gt; changedItems = e.ChangedItems;
+};
+
+app.Name = <span class="highlight-literal">"MyApp"</span>; <span class="highlight-comment">// This will trigger a PropertyChanged event on app</span>
+
+ <span class="highlight-comment">// This will both trigger a CollectionChanged event on app.Users and a PropertyChanged event on</span>
+ <span class="highlight-comment">// app.</span>
+app.Users.Add(<span class="highlight-keyword">new</span> User { Name = <span class="highlight-literal">"Matías"</span> });</pre>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">AddLanguageTabSet("ID0EAAABAAA");</script>
+        </div>
+        <div class="collapsibleAreaRegion" id="seeAlsoSection">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID10RB')" onkeypress="SectionExpandCollapse_CheckKey('ID10RB', event)" tabindex="0">
+            <img id="ID10RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span>
+        </div>
+        <div id="ID10RBSection" class="collapsibleSection">
+          <h4 class="subHeading">Other Resources</h4>
+          <div class="seeAlsoStyle">
+            <a href="1e03762d-b9f5-44af-a4b0-c23c36064c24.htm">Understanding and configuring collection change tracking</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pageFooter" class="pageFooter" />
+  </body>
+</html>

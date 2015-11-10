@@ -1,0 +1,167 @@
+﻿<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../styles/branding.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" />
+    <script type="text/javascript" src="../scripts/branding.js"> </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Understanding and configuring collection change tracking</title>
+    <meta name="Language" content="en-us" />
+    <meta name="Microsoft.Help.Id" content="1e03762d-b9f5-44af-a4b0-c23c36064c24" />
+    <meta name="Description" content="TrackerDog can also seamlessly track collection properties (1-n, m-n associations). Discover the quircks of collection change tracking on this document." />
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <meta name="BrandingAware" content="true" />
+    
+    
+    <link type="text/css" rel="stylesheet" href="../styles/highlight.css" />
+    <script type="text/javascript" src="../scripts/highlight.js"> </script>
+    <link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" />
+    <script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../scripts/branding-Website.js"></script>
+  </head>
+  <body onload="OnLoad('cs')">
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <div class="pageHeader" id="PageHeader">TrackerDog<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div>
+    <div class="pageBody">
+      <div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="0e46d6ac-6f64-4d54-98fd-3813df42cb8e.htm" title="TrackerDog" tocid="roottoc">TrackerDog</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="0e46d6ac-6f64-4d54-98fd-3813df42cb8e.htm" title="Welcome to TrackerDog!" tocid="0e46d6ac-6f64-4d54-98fd-3813df42cb8e">Welcome to TrackerDog!</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="95cc6530-e365-4045-951e-4ab992610c1f.htm" title="How does it work?" tocid="95cc6530-e365-4045-951e-4ab992610c1f">How does it work?</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="52e40f26-3dfe-47e0-adf1-09233e98f42e.htm" title="How-to: Working with TrackerDog" tocid="52e40f26-3dfe-47e0-adf1-09233e98f42e">How-to: Working with TrackerDog</a></div><div class="toclevel1 current" data-toclevel="1"><a data-tochassubtree="false" href="1e03762d-b9f5-44af-a4b0-c23c36064c24.htm" title="Collection change tracking" tocid="1e03762d-b9f5-44af-a4b0-c23c36064c24">Collection change tracking</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="172bcf6b-d432-4f32-a218-c71651691c21.htm" title="Version History" tocid="172bcf6b-d432-4f32-a218-c71651691c21">Version History</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="N_TrackerDog.htm" title="TrackerDog" tocid="N_TrackerDog">TrackerDog</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="N_TrackerDog_Configuration.htm" title="TrackerDog.Configuration" tocid="N_TrackerDog_Configuration">TrackerDog.Configuration</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="N_TrackerDog_Patterns.htm" title="TrackerDog.Patterns" tocid="N_TrackerDog_Patterns">TrackerDog.Patterns</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent">
+        <table class="titleTable">
+          <tr>
+            <td class="logoColumn">
+              <img src="../icons/Help.png" />
+            </td>
+            <td class="titleColumn">Understanding and configuring collection change tracking</td>
+          </tr>
+        </table>
+        <span class="introStyle"></span>
+        <div class="introduction">
+          <p>TrackerDog can also seamlessly track collection properties (1-n, m-n associations). Discover
+        the quircks of collection change tracking on this document.
+      </p>
+        </div>
+        <div class="collapsibleAreaRegion">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0">
+            <img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How does it work</span>
+        </div>
+        <div id="ID1RBSection" class="collapsibleSection">
+          <p>
+          Actually, TrackerDog doesn't track any type of collection, but you must tell it to track
+          certain collection types. <a href="P_TrackerDog_Configuration_TrackerDogConfiguration_CollectionConfiguration.htm">CollectionConfiguration</a> let's you
+          customize which collection interfaces can be tracked on and what implementations should be instantiated and proxied to
+          track their changes.
+        </p>
+          <p>These are the default implementations provided out-of-the-box:</p>
+          <ul>
+            <li>
+              <a href="http://msdn2.microsoft.com/en-us/library/dd412081" target="_blank">ISet<span id="LSTDD2CAD77_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_0?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_1?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+              <span class="phrase">implemented by</span>
+              <a href="http://msdn2.microsoft.com/en-us/library/bb359438" target="_blank">HashSet<span id="LSTDD2CAD77_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_2?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_3?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+            </li>
+            <li>
+              <a href="http://msdn2.microsoft.com/en-us/library/5y536ey6" target="_blank">IList<span id="LSTDD2CAD77_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_4?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_5?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+              <span class="phrase">implemented by</span>
+              <a href="http://msdn2.microsoft.com/en-us/library/6sh2ey19" target="_blank">List<span id="LSTDD2CAD77_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_6?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_7"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_7?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+            </li>
+            <li>
+              <a href="http://msdn2.microsoft.com/en-us/library/92t2ye13" target="_blank">ICollection<span id="LSTDD2CAD77_8"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_8?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_9"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_9?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+              <span class="phrase">implemented by</span>
+              <a href="http://msdn2.microsoft.com/en-us/library/6sh2ey19" target="_blank">List<span id="LSTDD2CAD77_10"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_10?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_11"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_11?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+            </li>
+          </ul>
+          <p>
+          You can either add new collection interfaces or replace default implementations to already configured
+          collection interfaces using the following methods:
+        </p>
+          <ul>
+            <li>
+              <a href="M_TrackerDog_Configuration_TrackableCollectionConfiguration_AddImplementation.htm">AddImplementation(Type, Type)</a>
+            </li>
+            <li>
+              <a href="M_TrackerDog_Configuration_TrackableCollectionConfiguration_ReplaceImplementation.htm">ReplaceImplementation(Type, Type)</a>
+            </li>
+          </ul>
+          <p>
+            <strong>
+            Note that both method arguments should be generic type definitions and you mustn't provide a collection interface and implementation
+            giving their type:
+          </strong>
+            <ul>
+              <li>
+                <strong>WRONG:</strong>
+                <span class="code">typeof(IList&lt;User&gt;)</span>, <span class="code">typeof(HashSet&lt;User&gt;)</span></li>
+              <li>
+                <strong>OK:</strong>
+                <span class="code">typeof(IList&lt;&gt;)</span>, <span class="code">typeof(HashSet&lt;&gt;)</span></li>
+            </ul>
+          </p>
+          <p>
+          When TrackerDog starts to track a collection property, it turns it into an instance of configured implementation to some
+          collection interface and it turns the so-called property into a proxy that already implements <a href="http://msdn2.microsoft.com/en-us/library/ms668629" target="_blank">INotifyCollectionChanged</a> and
+          implements on it the required members to track collection changes automatically.
+        </p>
+          <p>
+          The issue here is that, if your collection property is a different implementation of some configured collection interface, TrackerDog
+          will be still able to proxy the whole collection, but it will instantiate the configured implementation. For that reason, in order to avoid further issues,
+          it's advisable that collection properties should be typed using interface types:
+        </p>
+          <div class="codeSnippetContainer">
+            <div class="codeSnippetContainerTabs">
+              <div id="ID0EADABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+            </div>
+            <div class="codeSnippetContainerCodeContainer">
+              <div class="codeSnippetToolBar">
+                <div class="codeSnippetToolBarText">
+                  <a id="ID0EADABAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EADABAAA');return false;" title="Copy">Copy</a>
+                </div>
+              </div>
+              <div id="ID0EADABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">
+                  <span class="highlight-keyword">public</span> ISet&lt;User&gt; Users { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">set</span>; }</pre>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">AddLanguageTabSet("ID0EADABAAA");</script>
+          <p>
+          But if your collection property is typed using any custom <a href="http://msdn2.microsoft.com/en-us/library/dd412081" target="_blank">ISet<span id="LSTDD2CAD77_12"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_12?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_13"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_13?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a> implementation, it'll produce
+          no issue because TrackerDog will detect that implements the whole interface and it will create a proxy based on its
+          configured implementation.
+        </p>
+          <p>
+          If you want to let TrackerDog instantiate a proxy of a concrete collection interface, you'll add or replace an implementation:
+        </p>
+          <div class="codeSnippetContainer">
+            <div class="codeSnippetContainerTabs">
+              <div id="ID0EAAABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+            </div>
+            <div class="codeSnippetContainerCodeContainer">
+              <div class="codeSnippetToolBar">
+                <div class="codeSnippetToolBarText">
+                  <a id="ID0EAAABAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAAABAAA');return false;" title="Copy">Copy</a>
+                </div>
+              </div>
+              <div id="ID0EAAABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">TrackerDogConfiguration.CollectionConfiguration.ReplaceImplementation
+(
+    <span class="highlight-keyword">typeof</span>(IList&lt;&gt;),
+    <span class="highlight-keyword">typeof</span>(MyIListImplementation&lt;&gt;)
+);</pre>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">AddLanguageTabSet("ID0EAAABAAA");</script>
+        </div>
+        <div class="collapsibleAreaRegion" id="seeAlsoSection">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0">
+            <img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span>
+        </div>
+        <div id="ID2RBSection" class="collapsibleSection">
+          <h4 class="subHeading">Other Resources</h4>
+          <div class="seeAlsoStyle">
+            <a href="52e40f26-3dfe-47e0-adf1-09233e98f42e.htm">How-to: Working with TrackerDog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pageFooter" class="pageFooter" />
+  </body>
+</html>
