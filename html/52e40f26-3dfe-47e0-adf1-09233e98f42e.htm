@@ -281,10 +281,10 @@ IImmutableSet&lt;IObjectPropertyChangeTracking&gt; unchangedProperties = changeT
                 </div>
               </div>
               <div id="ID1EACAKAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
-                <pre xml:space="preserve">IEnumerable&lt;IObjectPropertyChangeTracking&gt; changedProperties = changeTracker.ChangedProperties.Of&lt;IDeclaredObjectPropertyChangeTracking&gt;();
+                <pre xml:space="preserve">IEnumerable&lt;IObjectPropertyChangeTracking&gt; changedProperties = changeTracker.ChangedProperties.OfType&lt;IDeclaredObjectPropertyChangeTracking&gt;();
 
 <span class="highlight-comment">// Also you can get unchanged properties</span>
-IEnumerable&lt;IObjectPropertyChangeTracking&gt; unchangedProperties = changeTracker.UnchangedProperties.Of&lt;IDeclaredObjectPropertyChangeTracking&gt;();</pre>
+IEnumerable&lt;IObjectPropertyChangeTracking&gt; unchangedProperties = changeTracker.UnchangedProperties.OfType&lt;IDeclaredObjectPropertyChangeTracking&gt;();</pre>
               </div>
             </div>
           </div>
