@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2015.7.25.0" projectFile="C:\Users\developer03\Documents\GitHub\trackerdog\TrackerDog.Documentation\TrackerDog.Documentation.shfbproj" started="13/11/2015 13:34:55">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2015.7.25.0" projectFile="C:\Users\developer03\Documents\GitHub\trackerdog\TrackerDog.Documentation\TrackerDog.Documentation.shfbproj" started="16/11/2015 11:38:19">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -36,16 +36,16 @@ Copying XML comments files
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00,0140
+</plugIn>    Last step completed in 00:00:00,0150
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00,0010
+    Last step completed in 00:00:00,0040
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - GenerateRefInfo.proj]
-Compilaci&#162;n iniciada a las 13/11/2015 13:34:56.
+Compilaci&#162;n iniciada a las 16/11/2015 11:38:21.
 Proyecto &quot;C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\GenerateRefInfo.proj&quot; en nodo 1 (destinos predeterminados).
 PrepareForBuild:
   Creando directorio &quot;obj\Debug\&quot;.
@@ -54,7 +54,7 @@ GenerateRefInfo:
   Copyright &#184; 2006-2015, Microsoft Corporation, All Rights Reserved.
   Portions Copyright &#184; 2006-2015, Eric Woodruff, All Rights Reserved.
   Loaded 1 assemblies for reflection and 54 dependency assemblies.
-  Wrote information on 3 namespaces, 12 types, and 47 members
+  Wrote information on 4 namespaces, 17 types, and 85 members
   Copiando el archivo de &quot;reflection.org&quot; en &quot;reflection.all&quot;.
   XslTransform (v2015.7.25.0)
   Copyright &#184; 2006-2015, Microsoft Corporation, All Rights Reserved.
@@ -64,13 +64,13 @@ Compilaci&#162;n del proyecto terminada &quot;C:\Users\developer03\Documents\Git
 
 Compilaci&#162;n correcta.
 
-Tiempo transcurrido 00:00:00.70
-    Last step completed in 00:00:00,9620
+Tiempo transcurrido 00:00:00.88
+    Last step completed in 00:00:01,4070
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - TransformManifest.proj]
-Compilaci&#162;n iniciada a las 13/11/2015 13:34:57.
+Compilaci&#162;n iniciada a las 16/11/2015 11:38:22.
 Proyecto &quot;C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\TransformManifest.proj&quot; en nodo 1 (destinos predeterminados).
 TransformManifest:
   XslTransform (v2015.7.25.0)
@@ -87,6 +87,7 @@ TransformManifest:
   Portions Copyright &#184; 2006-2015, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\AddFilenames.xsl&#39;.
     Unique name M_TrackerDog_ObjectChangeTrackingExtensions_GetActualTypeIfTrackable_1 generated for M:TrackerDog.ObjectChangeTrackingExtensions.GetActualTypeIfTrackable(System.Type)
+    Unique name M_TrackerDog_ObjectChangeTrackingExtensions_GetPropertyTracking_1 generated for M:TrackerDog.ObjectChangeTrackingExtensions.GetPropertyTracking(System.Object,System.String)
     Unique name M_TrackerDog_ObjectChangeTrackingExtensions_IsTrackable_1 generated for M:TrackerDog.ObjectChangeTrackingExtensions.IsTrackable(System.Type)
   XslTransform (v2015.7.25.0)
   Copyright &#184; 2006-2015, Microsoft Corporation, All Rights Reserved.
@@ -96,12 +97,12 @@ Compilaci&#162;n del proyecto terminada &quot;C:\Users\developer03\Documents\Git
 
 Compilaci&#162;n correcta.
 
-Tiempo transcurrido 00:00:00.61
-    Last step completed in 00:00:00,8180
+Tiempo transcurrido 00:00:00.60
+    Last step completed in 00:00:00,8210
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00,0180
+    Last step completed in 00:00:00,0280
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -122,18 +123,14 @@ Generating conceptual topic files
     C:\Users\developer03\Documents\GitHub\trackerdog\TrackerDog.Documentation\Content\WhatIsTracked.aml -&gt; C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\ddueXml\1941dd31-d46f-472f-9589-7ef6e721bb5b.xml
     Parsing topic file &#39;C:\Users\developer03\Documents\GitHub\trackerdog\TrackerDog.Documentation\Content\Collections.aml&#39;
     C:\Users\developer03\Documents\GitHub\trackerdog\TrackerDog.Documentation\Content\Collections.aml -&gt; C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\ddueXml\1e03762d-b9f5-44af-a4b0-c23c36064c24.xml
-    Parsing topic file &#39;C:\Users\developer03\Documents\GitHub\trackerdog\TrackerDog.Documentation\Content\VersionHistory\VersionHistory.aml&#39;
-    C:\Users\developer03\Documents\GitHub\trackerdog\TrackerDog.Documentation\Content\VersionHistory\VersionHistory.aml -&gt; C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\ddueXml\172bcf6b-d432-4f32-a218-c71651691c21.xml
-    Parsing topic file &#39;C:\Users\developer03\Documents\GitHub\trackerdog\TrackerDog.Documentation\Content\VersionHistory\v1.0.0.0.aml&#39;
-    C:\Users\developer03\Documents\GitHub\trackerdog\TrackerDog.Documentation\Content\VersionHistory\v1.0.0.0.aml -&gt; C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\ddueXml\faea32e1-2034-42dd-9e1a-3a8b082602dc.xml
-    Last step completed in 00:00:00,1870
+    Last step completed in 00:00:00,1190
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     ConceptualManifest.xml
-    Last step completed in 00:00:00,0760
+    Last step completed in 00:00:00,0410
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
@@ -142,12 +139,12 @@ C:\Users\developer03\Documents\GitHub\trackerdog\TrackerDog.Documentation\icons\
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00,0010
+    Last step completed in 00:00:00,0000
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - GenerateIntermediateTOC.proj]
-Compilaci&#162;n iniciada a las 13/11/2015 13:34:58.
+Compilaci&#162;n iniciada a las 16/11/2015 11:38:23.
 Proyecto &quot;C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\GenerateIntermediateTOC.proj&quot; en nodo 1 (destinos predeterminados).
 GenerateIntermediateTOC:
   XslTransform (v2015.7.25.0)
@@ -158,15 +155,15 @@ Compilaci&#162;n del proyecto terminada &quot;C:\Users\developer03\Documents\Git
 
 Compilaci&#162;n correcta.
 
-Tiempo transcurrido 00:00:00.11
+Tiempo transcurrido 00:00:00.12
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00,3350
+    Last step completed in 00:00:00,3510
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
     conceptual.config
-    Last step completed in 00:00:00,5740
+    Last step completed in 00:00:00,5110
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -177,12 +174,12 @@ C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\conceptual.config
     The configuration for &#39;Code Block Component&#39; is disabled and will not be used.
     Replacing default configuration for &#39;Syntax Component&#39; with the custom configuration
     Removing unused ExampleComponent.
-    Last step completed in 00:00:00,0300
+    Last step completed in 00:00:00,0250
 </buildStep>
 <buildStep step="BuildConceptualTopics">
 Building conceptual help topics...
 [C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - BuildConceptualTopics.proj]
-Compilaci&#162;n iniciada a las 13/11/2015 13:34:59.
+Compilaci&#162;n iniciada a las 16/11/2015 11:38:24.
 Proyecto &quot;C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\BuildConceptualTopics.proj&quot; en nodo 1 (destinos predeterminados).
 BuildConceptualTopics:
   BuildAssembler (v2015.7.25.0)
@@ -190,21 +187,25 @@ BuildConceptualTopics:
   Portions Copyright &#184; 2006-2015, Eric Woodruff, All Rights Reserved.
   Loading configuration...
   Processing topics...
+BuildAssembler : warning : ResolveConceptualLinksComponent: [0e46d6ac-6f64-4d54-98fd-3813df42cb8e] Unknown conceptual link target &#39;172bcf6b-d432-4f32-a218-c71651691c21&#39;. [C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\BuildConceptualTopics.proj]
 BuildAssembler : warning : SharedContentComponent: [1941dd31-d46f-472f-9589-7ef6e721bb5b] Missing shared content item. Tag: &#39;token&#39;; Id:&#39;projectNaame&#39;. [C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\BuildConceptualTopics.proj]
-  Processed 7 topic(s)
-  1 warning(s)
+BuildAssembler : warning : ResolveReferenceLinksComponent: [1e03762d-b9f5-44af-a4b0-c23c36064c24] Unknown reference link target &#39;P:TrackerDog.CollectionHandling.AddedItems&#39;. [C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\BuildConceptualTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [1e03762d-b9f5-44af-a4b0-c23c36064c24] Unknown reference link target &#39;P:TrackerDog.CollectionHandling.RemovedItems&#39;. [C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\BuildConceptualTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [1e03762d-b9f5-44af-a4b0-c23c36064c24] Unknown reference link target &#39;P:TrackerDog.CollectionHandling.Change&#39;. [C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\BuildConceptualTopics.proj]
+  Processed 5 topic(s)
+  5 warning(s)
   CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
 Compilaci&#162;n del proyecto terminada &quot;C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\BuildConceptualTopics.proj&quot; (destinos predeterminados).
 
 Compilaci&#162;n correcta.
 
-Tiempo transcurrido 00:00:06.49
-    Last step completed in 00:00:06,7330
+Tiempo transcurrido 00:00:08.43
+    Last step completed in 00:00:08,6509
 </buildStep>
 <buildStep step="BuildReferenceTopics">
 Building reference help topics...
 [C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - BuildReferenceTopics.proj]
-Compilaci&#162;n iniciada a las 13/11/2015 13:35:06.
+Compilaci&#162;n iniciada a las 16/11/2015 11:38:32.
 Proyecto &quot;C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\BuildReferenceTopics.proj&quot; en nodo 1 (destinos predeterminados).
 BuildReferenceTopics:
   BuildAssembler (v2015.7.25.0)
@@ -214,7 +215,7 @@ BuildReferenceTopics:
   Processing topics...
 BuildAssembler : warning : ResolveReferenceLinksComponent: [N:TrackerDog] Unknown reference link target &#39;T:TrackerDog.TrackableObjectFactory&#39;. [C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:TrackerDog.Trackable] Unknown reference link target &#39;T:TrackerDog.TrackableObjectFactory&#39;. [C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\BuildReferenceTopics.proj]
-  Processed 86 topic(s)
+  Processed 136 topic(s)
   2 warning(s)
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 6 of 15.
   CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 3 of 30.
@@ -222,12 +223,12 @@ Compilaci&#162;n del proyecto terminada &quot;C:\Users\developer03\Documents\Git
 
 Compilaci&#162;n correcta.
 
-Tiempo transcurrido 00:00:13.85
-    Last step completed in 00:00:14,1110
+Tiempo transcurrido 00:00:14.79
+    Last step completed in 00:00:15,0778
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00,0110
+    Last step completed in 00:00:00,0100
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -239,11 +240,11 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
 Processing website files in C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\Output\Website
-Processed 93 HTML files
+Processed 141 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\WebKI.xml
 Saving website table of contents to C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\WebTOC.xml
-    Last step completed in 00:00:01,0860
+    Last step completed in 00:00:02,2319
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -322,32 +323,32 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyle
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\Output\Website\icons\TocOpen.gif
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\Output\Website\scripts\branding-Website.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; C:\Users\developer03\Documents\GitHub\trackerdog\docs\Working\Output\Website\scripts\jquery-1.11.0.min.js
-    Last step completed in 00:00:00,7740
+    Last step completed in 00:00:00,7450
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
-    Last step completed in 00:00:00,0000
+    Last step completed in 00:00:00,0010
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:03,1640
+</plugIn>    Last step completed in 00:00:03,8389
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
-Copied 235 files for the website content
-    Last step completed in 00:00:02,9210
+Copied 294 files for the website content
+    Last step completed in 00:00:04,2999
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00,2030
+    Last step completed in 00:00:00,3050
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 13/11/2015 13:35:28.  Total time: 00:00:32,9490
+Build completed successfully at 16/11/2015 11:38:59.  Total time: 00:00:39,4614
 
 </buildStep>
 </shfbBuild>
