@@ -10,6 +10,7 @@
   <HelpKINode Title="AddImplementation method" Url="html/M_TrackerDog_Configuration_TrackableCollectionConfiguration_AddImplementation.htm" />
   <HelpKINode Title="AsTrackable(Of TObject) method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_AsTrackable__1.htm" />
   <HelpKINode Title="AsTrackable&lt;TObject&gt; method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_AsTrackable__1.htm" />
+  <HelpKINode Title="CanTrack method" Url="html/M_TrackerDog_Configuration_TrackableCollectionConfiguration_CanTrack.htm" />
   <HelpKINode Title="CanTrackProperty method" Url="html/M_TrackerDog_Configuration_TrackerDogConfiguration_CanTrackProperty.htm" />
   <HelpKINode Title="CanTrackType method" Url="html/M_TrackerDog_Configuration_TrackerDogConfiguration_CanTrackType.htm" />
   <HelpKINode Title="Change property" Url="html/P_TrackerDog_CollectionHandling_CollectionChangeContext_Change.htm" />
@@ -33,7 +34,6 @@
   <HelpKINode Title="CollectionChangeContext.ItemsBefore property" Url="html/P_TrackerDog_CollectionHandling_CollectionChangeContext_ItemsBefore.htm" />
   <HelpKINode Title="CollectionChangeContext.ParentObjectProperty property" Url="html/P_TrackerDog_CollectionHandling_CollectionChangeContext_ParentObjectProperty.htm" />
   <HelpKINode Title="CollectionChangeContext.RemovedItems property" Url="html/P_TrackerDog_CollectionHandling_CollectionChangeContext_RemovedItems.htm" />
-  <HelpKINode Title="CollectionConfiguration property" Url="html/P_TrackerDog_Configuration_TrackerDogConfiguration_CollectionConfiguration.htm" />
   <HelpKINode Title="CollectionImplementation class">
     <HelpKINode Title="CollectionImplementation Class" Url="html/T_TrackerDog_Configuration_CollectionImplementation.htm" />
     <HelpKINode Title="about CollectionImplementation class" Url="html/T_TrackerDog_Configuration_CollectionImplementation.htm" />
@@ -44,6 +44,7 @@
   <HelpKINode Title="CollectionImplementation.ChangeInterceptor property" Url="html/P_TrackerDog_Configuration_CollectionImplementation_ChangeInterceptor.htm" />
   <HelpKINode Title="CollectionImplementation.CollectionImplementation constructor" Url="html/M_TrackerDog_Configuration_CollectionImplementation__ctor.htm" />
   <HelpKINode Title="CollectionImplementation.Type property" Url="html/P_TrackerDog_Configuration_CollectionImplementation_Type.htm" />
+  <HelpKINode Title="Collections property" Url="html/P_TrackerDog_Configuration_TrackerDogConfiguration_Collections.htm" />
   <HelpKINode Title="Complete method" Url="html/M_TrackerDog_Patterns_IObjectChangeUnitOfWork_Complete.htm" />
   <HelpKINode Title="Contains method" Url="html/M_TrackerDog_CollectionHandling_DefaultCollectionChangeInterceptor_1_Contains.htm" />
   <HelpKINode Title="CopyTo method" Url="html/M_TrackerDog_CollectionHandling_DefaultCollectionChangeInterceptor_1_CopyTo.htm" />
@@ -178,6 +179,9 @@
   <HelpKINode Title="ObjectChangeTrackingExtensions.IsTrackable method" Url="html/Overload_TrackerDog_ObjectChangeTrackingExtensions_IsTrackable.htm" />
   <HelpKINode Title="ObjectChangeTrackingExtensions.OldPropertyValue method" Url="html/Overload_TrackerDog_ObjectChangeTrackingExtensions_OldPropertyValue.htm" />
   <HelpKINode Title="ObjectChangeTrackingExtensions.PropertyHasChanged method" Url="html/Overload_TrackerDog_ObjectChangeTrackingExtensions_PropertyHasChanged.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions.ToUntracked(Of TObject) method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_ToUntracked__1.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions.ToUntracked&lt;TObject&gt; method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_ToUntracked__1.htm" />
+  <HelpKINode Title="ObjectChangeTrackingExtensions.ToUntrackedEnumerable method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_ToUntrackedEnumerable.htm" />
   <HelpKINode Title="ObjectChangeTrackingExtensions.UndoChanges method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_UndoChanges.htm" />
   <HelpKINode Title="Of(Of TObject) method" Url="html/M_TrackerDog_Trackable_Of__1.htm" />
   <HelpKINode Title="Of&lt;TObject&gt; method" Url="html/M_TrackerDog_Trackable_Of__1.htm" />
@@ -237,6 +241,9 @@
   <HelpKINode Title="SymmetricExceptWith method" Url="html/M_TrackerDog_CollectionHandling_SetChangeInterceptor_1_SymmetricExceptWith.htm" />
   <HelpKINode Title="ThisType(Of T) method" Url="html/M_TrackerDog_Configuration_Track_ThisType__1.htm" />
   <HelpKINode Title="ThisType&lt;T&gt; method" Url="html/M_TrackerDog_Configuration_Track_ThisType__1.htm" />
+  <HelpKINode Title="ToUntracked(Of TObject) method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_ToUntracked__1.htm" />
+  <HelpKINode Title="ToUntracked&lt;TObject&gt; method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_ToUntracked__1.htm" />
+  <HelpKINode Title="ToUntrackedEnumerable method" Url="html/M_TrackerDog_ObjectChangeTrackingExtensions_ToUntrackedEnumerable.htm" />
   <HelpKINode Title="Track class">
     <HelpKINode Title="Track Class" Url="html/T_TrackerDog_Configuration_Track.htm" />
     <HelpKINode Title="about Track class" Url="html/T_TrackerDog_Configuration_Track.htm" />
@@ -258,6 +265,7 @@
     <HelpKINode Title="methods" Url="html/Methods_T_TrackerDog_Configuration_TrackableCollectionConfiguration.htm" />
   </HelpKINode>
   <HelpKINode Title="TrackableCollectionConfiguration.AddImplementation method" Url="html/M_TrackerDog_Configuration_TrackableCollectionConfiguration_AddImplementation.htm" />
+  <HelpKINode Title="TrackableCollectionConfiguration.CanTrack method" Url="html/M_TrackerDog_Configuration_TrackableCollectionConfiguration_CanTrack.htm" />
   <HelpKINode Title="TrackableCollectionConfiguration.GetImplementation method" Url="html/M_TrackerDog_Configuration_TrackableCollectionConfiguration_GetImplementation.htm" />
   <HelpKINode Title="TrackableCollectionConfiguration.ReplaceImplementation method" Url="html/M_TrackerDog_Configuration_TrackableCollectionConfiguration_ReplaceImplementation.htm" />
   <HelpKINode Title="TrackableCollectionConfiguration.TrackableCollectionConfiguration constructor" Url="html/M_TrackerDog_Configuration_TrackableCollectionConfiguration__ctor.htm" />
@@ -318,7 +326,7 @@
   </HelpKINode>
   <HelpKINode Title="TrackerDogConfiguration.CanTrackProperty method" Url="html/M_TrackerDog_Configuration_TrackerDogConfiguration_CanTrackProperty.htm" />
   <HelpKINode Title="TrackerDogConfiguration.CanTrackType method" Url="html/M_TrackerDog_Configuration_TrackerDogConfiguration_CanTrackType.htm" />
-  <HelpKINode Title="TrackerDogConfiguration.CollectionConfiguration property" Url="html/P_TrackerDog_Configuration_TrackerDogConfiguration_CollectionConfiguration.htm" />
+  <HelpKINode Title="TrackerDogConfiguration.Collections property" Url="html/P_TrackerDog_Configuration_TrackerDogConfiguration_Collections.htm" />
   <HelpKINode Title="TrackerDogConfiguration.TrackTheseTypes method" Url="html/M_TrackerDog_Configuration_TrackerDogConfiguration_TrackTheseTypes.htm" />
   <HelpKINode Title="TrackTheseTypes method" Url="html/M_TrackerDog_Configuration_TrackerDogConfiguration_TrackTheseTypes.htm" />
   <HelpKINode Title="Type property">

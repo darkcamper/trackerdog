@@ -53,6 +53,11 @@
               How to configure TrackerDog to support collection change tracking
             </a>
             </li>
+            <li>
+              <a href="#setNotes">
+              Set collection notes
+            </a>
+            </li>
           </ul>
         </div>
         <div class="collapsibleAreaRegion" id="interceptors">
@@ -66,15 +71,15 @@
           <p>Basically, the anatomy of an interceptor is:</p>
           <div class="codeSnippetContainer">
             <div class="codeSnippetContainerTabs">
-              <div id="ID1EAHACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+              <div id="ID1EAHADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
             </div>
             <div class="codeSnippetContainerCodeContainer">
               <div class="codeSnippetToolBar">
                 <div class="codeSnippetToolBarText">
-                  <a id="ID1EAHACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAHACAAA');return false;" title="Copy">Copy</a>
+                  <a id="ID1EAHADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAHADAAA');return false;" title="Copy">Copy</a>
                 </div>
               </div>
-              <div id="ID1EAHACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+              <div id="ID1EAHADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
                 <pre xml:space="preserve">
                   <span class="highlight-keyword">public</span> <span class="highlight-keyword">sealed</span> <span class="highlight-keyword">class</span> CollectionChangeInterceptor : ICollection&lt;T&gt;
 {
@@ -90,7 +95,7 @@
               </div>
             </div>
           </div>
-          <script type="text/javascript">AddLanguageTabSet("ID1EAHACAAA");</script>
+          <script type="text/javascript">AddLanguageTabSet("ID1EAHADAAA");</script>
           <p>
           Any collection change interceptor must provide a constructor with one parameter of type
           <a href="T_TrackerDog_CollectionHandling_CollectionChangeContext.htm">CollectionChangeContext</a>.
@@ -122,15 +127,15 @@
         </p>
           <div class="codeSnippetContainer">
             <div class="codeSnippetContainerTabs">
-              <div id="ID1EABACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+              <div id="ID1EABADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
             </div>
             <div class="codeSnippetContainerCodeContainer">
               <div class="codeSnippetToolBar">
                 <div class="codeSnippetToolBarText">
-                  <a id="ID1EABACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EABACAAA');return false;" title="Copy">Copy</a>
+                  <a id="ID1EABADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EABADAAA');return false;" title="Copy">Copy</a>
                 </div>
               </div>
-              <div id="ID1EABACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+              <div id="ID1EABADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
                 <pre xml:space="preserve">
                   <span class="highlight-keyword">public</span> <span class="highlight-keyword">void</span> Add(T item)
 {
@@ -144,7 +149,7 @@
               </div>
             </div>
           </div>
-          <script type="text/javascript">AddLanguageTabSet("ID1EABACAAA");</script>
+          <script type="text/javascript">AddLanguageTabSet("ID1EABADAAA");</script>
           <div class="alert">
             <table>
               <tr>
@@ -179,31 +184,31 @@
         <div id="ID3RBSection" class="collapsibleSection">
           <p>
           Actually, TrackerDog doesn't track any type of collection, but you must tell it to track
-          certain collection types. <a href="P_TrackerDog_Configuration_TrackerDogConfiguration_CollectionConfiguration.htm">TrackerDogConfiguration<span id="LSTDD2CAD77_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_3?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>CollectionConfiguration</a> let's you
+          certain collection types. <span class="nolink">TrackerDogConfiguration.CollectionConfiguration</span> let's you
           customize which collection interfaces can be tracked on and what implementations should be instantiated and proxied to
           track their changes.
         </p>
           <p>These are the default implementations provided out-of-the-box:</p>
           <ul>
             <li>
-              <a href="http://msdn2.microsoft.com/en-us/library/dd412081" target="_blank">ISet<span id="LSTDD2CAD77_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_4?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_5?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+              <a href="http://msdn2.microsoft.com/en-us/library/dd412081" target="_blank">ISet<span id="LSTDD2CAD77_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_3?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_4?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
               <span class="phrase">implemented by</span>
-              <a href="http://msdn2.microsoft.com/en-us/library/bb359438" target="_blank">HashSet<span id="LSTDD2CAD77_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_6?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_7"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_7?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+              <a href="http://msdn2.microsoft.com/en-us/library/bb359438" target="_blank">HashSet<span id="LSTDD2CAD77_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_5?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_6?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
             </li>
             <li>
-              <a href="http://msdn2.microsoft.com/en-us/library/5y536ey6" target="_blank">IList<span id="LSTDD2CAD77_8"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_8?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_9"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_9?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+              <a href="http://msdn2.microsoft.com/en-us/library/5y536ey6" target="_blank">IList<span id="LSTDD2CAD77_7"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_7?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_8"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_8?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
               <span class="phrase">implemented by</span>
-              <a href="http://msdn2.microsoft.com/en-us/library/6sh2ey19" target="_blank">List<span id="LSTDD2CAD77_10"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_10?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_11"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_11?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+              <a href="http://msdn2.microsoft.com/en-us/library/6sh2ey19" target="_blank">List<span id="LSTDD2CAD77_9"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_9?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_10"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_10?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
             </li>
             <li>
-              <a href="http://msdn2.microsoft.com/en-us/library/92t2ye13" target="_blank">ICollection<span id="LSTDD2CAD77_12"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_12?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_13"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_13?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+              <a href="http://msdn2.microsoft.com/en-us/library/92t2ye13" target="_blank">ICollection<span id="LSTDD2CAD77_11"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_11?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_12"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_12?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
               <span class="phrase">implemented by</span>
-              <a href="http://msdn2.microsoft.com/en-us/library/6sh2ey19" target="_blank">List<span id="LSTDD2CAD77_14"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_14?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_15"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_15?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+              <a href="http://msdn2.microsoft.com/en-us/library/6sh2ey19" target="_blank">List<span id="LSTDD2CAD77_13"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_13?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_14"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_14?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
             </li>
             <li>
-              <a href="http://msdn2.microsoft.com/en-us/library/9eekhta0" target="_blank">IEnumerable<span id="LSTDD2CAD77_16"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_16?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_17"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_17?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+              <a href="http://msdn2.microsoft.com/en-us/library/9eekhta0" target="_blank">IEnumerable<span id="LSTDD2CAD77_15"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_15?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_16"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_16?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
               <span class="phrase">implemented by</span>
-              <a href="http://msdn2.microsoft.com/en-us/library/6sh2ey19" target="_blank">List<span id="LSTDD2CAD77_18"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_18?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_19"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_19?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+              <a href="http://msdn2.microsoft.com/en-us/library/6sh2ey19" target="_blank">List<span id="LSTDD2CAD77_17"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_17?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_18"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_18?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
             </li>
           </ul>
           <p>
@@ -223,17 +228,20 @@
             </li>
           </ul>
           <p>
+            <a href="T_TrackerDog_Configuration_TrackableCollectionConfiguration.htm">TrackableCollectionConfiguration</a> must be accessed and configured
+          getting it using the static property <span class="nolink">Collections</span></p>
+          <p>
           Method arguments explained:
         </p>
           <ul>
             <li>
               <strong>First argument</strong> must be a collection interface. It can be either .NET Framework ones or they can be invented, but any given interface must also implement
-            <a href="http://msdn2.microsoft.com/en-us/library/9eekhta0" target="_blank">IEnumerable<span id="LSTDD2CAD77_20"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_20?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_21"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_21?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>.
+            <a href="http://msdn2.microsoft.com/en-us/library/9eekhta0" target="_blank">IEnumerable<span id="LSTDD2CAD77_19"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_19?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_20"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_20?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>.
           </li>
             <li>
               <strong>Second argument</strong> must be a collection implementation of type of first argument. For example, if first argument was
-            <a href="http://msdn2.microsoft.com/en-us/library/92t2ye13" target="_blank">ICollection<span id="LSTDD2CAD77_22"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_22?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_23"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_23?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a> second argument may be
-            <a href="http://msdn2.microsoft.com/en-us/library/6sh2ey19" target="_blank">List<span id="LSTDD2CAD77_24"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_24?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_25"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_25?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>.
+            <a href="http://msdn2.microsoft.com/en-us/library/92t2ye13" target="_blank">ICollection<span id="LSTDD2CAD77_21"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_21?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_22"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_22?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a> second argument may be
+            <a href="http://msdn2.microsoft.com/en-us/library/6sh2ey19" target="_blank">List<span id="LSTDD2CAD77_23"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_23?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_24"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_24?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>.
           </li>
             <li>
               <strong>Third argument</strong> must be also collection implementation of type of first argument. But this case is different: you need to provide an implementation
@@ -276,23 +284,23 @@
         </p>
           <div class="codeSnippetContainer">
             <div class="codeSnippetContainerTabs">
-              <div id="ID1EADABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+              <div id="ID1EADACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
             </div>
             <div class="codeSnippetContainerCodeContainer">
               <div class="codeSnippetToolBar">
                 <div class="codeSnippetToolBarText">
-                  <a id="ID1EADABAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EADABAAA');return false;" title="Copy">Copy</a>
+                  <a id="ID1EADACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EADACAAA');return false;" title="Copy">Copy</a>
                 </div>
               </div>
-              <div id="ID1EADABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+              <div id="ID1EADACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
                 <pre xml:space="preserve">
                   <span class="highlight-keyword">public</span> ISet&lt;User&gt; Users { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">set</span>; }</pre>
               </div>
             </div>
           </div>
-          <script type="text/javascript">AddLanguageTabSet("ID1EADABAAA");</script>
+          <script type="text/javascript">AddLanguageTabSet("ID1EADACAAA");</script>
           <p>
-          But if your collection property is typed using any custom <a href="http://msdn2.microsoft.com/en-us/library/dd412081" target="_blank">ISet<span id="LSTDD2CAD77_26"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_26?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_27"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_27?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a> implementation, it'll produce
+          But if your collection property is typed using any custom <a href="http://msdn2.microsoft.com/en-us/library/dd412081" target="_blank">ISet<span id="LSTDD2CAD77_25"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_25?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_26"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_26?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a> implementation, it'll produce
           no issue because TrackerDog will detect that implements the whole interface and it will create a proxy based on its
           configured implementation.
         </p>
@@ -301,16 +309,16 @@
         </p>
           <div class="codeSnippetContainer">
             <div class="codeSnippetContainerTabs">
-              <div id="ID1EAAABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
+              <div id="ID1EAAACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div>
             </div>
             <div class="codeSnippetContainerCodeContainer">
               <div class="codeSnippetToolBar">
                 <div class="codeSnippetToolBarText">
-                  <a id="ID1EAAABAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAABAAA');return false;" title="Copy">Copy</a>
+                  <a id="ID1EAAACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAACAAA');return false;" title="Copy">Copy</a>
                 </div>
               </div>
-              <div id="ID1EAAABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
-                <pre xml:space="preserve">TrackerDogConfiguration.CollectionConfiguration.ReplaceImplementation
+              <div id="ID1EAAACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
+                <pre xml:space="preserve">TrackerDogConfiguration.Collections.ReplaceImplementation
 (
     <span class="highlight-keyword">typeof</span>(IList&lt;&gt;),
     <span class="highlight-keyword">typeof</span>(MyIListImplementation&lt;&gt;)
@@ -319,13 +327,33 @@
               </div>
             </div>
           </div>
-          <script type="text/javascript">AddLanguageTabSet("ID1EAAABAAA");</script>
+          <script type="text/javascript">AddLanguageTabSet("ID1EAAACAAA");</script>
         </div>
-        <div class="collapsibleAreaRegion" id="seeAlsoSection">
+        <div class="collapsibleAreaRegion" id="setNotes">
           <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0">
-            <img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span>
+            <img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Set collection notes</span>
         </div>
         <div id="ID4RBSection" class="collapsibleSection">
+          <p>
+          Most <a href="http://msdn2.microsoft.com/en-us/library/dd412081" target="_blank">ISet<span id="LSTDD2CAD77_27"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_27?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_28"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_28?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a> implementations require members to either
+          override <a href="http://msdn2.microsoft.com/en-us/library/bsc2ak47" target="_blank">Equals(Object)</a> and <a href="http://msdn2.microsoft.com/en-us/library/zdee4b3y" target="_blank">GetHashCode<span id="LSTDD2CAD77_29"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_29?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>, or when using
+          <a href="http://msdn2.microsoft.com/en-us/library/bb359438" target="_blank">HashSet<span id="LSTDD2CAD77_30"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_30?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_31"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_31?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a> some constructor overloads accept implementations of
+          <a href="http://msdn2.microsoft.com/en-us/library/ms132151" target="_blank">IEqualityComparer<span id="LSTDD2CAD77_32"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_32?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_33"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_33?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a> implementations.
+        </p>
+          <p>
+          Current TrackerDog implementation will not be able to create a trackable collection of <a href="http://msdn2.microsoft.com/en-us/library/bb359438" target="_blank">HashSet<span id="LSTDD2CAD77_34"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_34?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_35"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_35?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>
+          providing the source untracked  <a href="http://msdn2.microsoft.com/en-us/library/ms132151" target="_blank">IEqualityComparer<span id="LSTDD2CAD77_36"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_36?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTDD2CAD77_37"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_37?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a>. <strong>That is, set members will be forced to
+          override both <a href="http://msdn2.microsoft.com/en-us/library/bsc2ak47" target="_blank">Equals(Object)</a> and <a href="http://msdn2.microsoft.com/en-us/library/zdee4b3y" target="_blank">GetHashCode<span id="LSTDD2CAD77_38"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTDD2CAD77_38?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> methods instead</strong>.
+        </p>
+          <p>
+          This limitation can be troublesome if member equality may vary depending on the context. Future versions of TrackerDog will try to address this limitation.
+        </p>
+        </div>
+        <div class="collapsibleAreaRegion" id="seeAlsoSection">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0">
+            <img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span>
+        </div>
+        <div id="ID5RBSection" class="collapsibleSection">
           <h4 class="subHeading">Other Resources</h4>
           <div class="seeAlsoStyle">
             <a href="52e40f26-3dfe-47e0-adf1-09233e98f42e.htm">How-to: Working with TrackerDog</a>
