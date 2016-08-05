@@ -221,15 +221,15 @@
         </p>
           <ul>
             <li>
-              <a href="M_TrackerDog_Configuration_TrackableCollectionConfiguration_AddImplementation.htm">AddImplementation(Type, Type, Type)</a>
+              <a href="M_TrackerDog_Configuration_ICollectionChangeTrackingConfiguration_AddImplementation.htm">AddImplementation(Type, Type, Type)</a>
             </li>
             <li>
-              <a href="M_TrackerDog_Configuration_TrackableCollectionConfiguration_ReplaceImplementation.htm">ReplaceImplementation(Type, Type, Type)</a>
+              <a href="M_TrackerDog_Configuration_ICollectionChangeTrackingConfiguration_ReplaceImplementation.htm">ReplaceImplementation(Type, Type, Type)</a>
             </li>
           </ul>
           <p>
-            <a href="T_TrackerDog_Configuration_TrackableCollectionConfiguration.htm">TrackableCollectionConfiguration</a> must be accessed and configured
-          getting it using the static property <span class="nolink">Collections</span></p>
+            <a href="T_TrackerDog_Configuration_ICollectionChangeTrackingConfiguration.htm">ICollectionChangeTrackingConfiguration</a> must be accessed and configured
+          getting it using the property <span class="nolink">Collections</span></p>
           <p>
           Method arguments explained:
         </p>
@@ -318,7 +318,8 @@
                 </div>
               </div>
               <div id="ID1EAAACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block">
-                <pre xml:space="preserve">TrackerDogConfiguration.Collections.ReplaceImplementation
+                <pre xml:space="preserve">IObjectChangeTrackingConfiguration config = ObjectChangeTracking.CreateConfiguration();
+config.Collections.ReplaceImplementation
 (
     <span class="highlight-keyword">typeof</span>(IList&lt;&gt;),
     <span class="highlight-keyword">typeof</span>(MyIListImplementation&lt;&gt;)
